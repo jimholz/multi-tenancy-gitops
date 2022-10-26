@@ -17,7 +17,7 @@ patches:
 - target:
     group: argoproj.io
     kind: AppProject
-  patch: |-
+  patch: 
     - op: add
       path: /spec/sourceRepos/-
       value: https://charts.cloudnativetoolkit.dev
@@ -25,7 +25,7 @@ patches:
     group: argoproj.io
     kind: AppProject
     labelSelector: "gitops.tier.layer=infra"
-  patch: |-
+  patch: 
     - op: add
       path: /spec/sourceRepos/-
       value: https://github.com/jimholz/multi-tenancy-gitops.git
@@ -36,7 +36,7 @@ patches:
     group: argoproj.io
     kind: AppProject
     labelSelector: "gitops.tier.layer=services"
-  patch: |-
+  patch:
     - op: add
       path: /spec/sourceRepos/-
       value: https://github.com/jimholz/multi-tenancy-gitops.git
@@ -53,7 +53,7 @@ patches:
     group: argoproj.io
     kind: AppProject
     labelSelector: "gitops.tier.layer=applications"
-  patch: |-
+  patch: 
     - op: add
       path: /spec/sourceRepos/-
       value: https://github.com/jimholz/multi-tenancy-gitops.git
